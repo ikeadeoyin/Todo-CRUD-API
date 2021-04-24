@@ -1,0 +1,28 @@
+GET http://localhost:3000/todo
+
+###
+GET http://localhost:3000/todo/60840681aaf26a28b40359a5
+
+###
+POST  http://localhost:3000/todo
+Content-Type: application/json
+
+
+{
+    "name": "Read my notes",
+    "category": "School",
+    "deadline": "2021-04-29"
+}
+
+###
+DELETE http://localhost:3000/todo/60840654aaf26a28b40359a4
+
+###
+PATCH  http://localhost:3000/todo/60840681aaf26a28b4035
+
+Content-Type: application/json
+
+
+{
+    "name": "Hangout",
+}
